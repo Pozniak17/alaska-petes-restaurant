@@ -1,0 +1,27 @@
+/* гаттер в нас 16px */
+@media (min-width: 360px) {
+  .container {
+    margin: 0 auto;
+    width: 344px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* гаттер в нас 20px */
+@media (min-width: 744px) {
+  .container {
+    width: 716px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* гаттер в нас 24px */
+@media (min-width: 1440px) {
+  .container {
+    width: 1224px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
