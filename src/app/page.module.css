@@ -1,0 +1,21 @@
+.header-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header-list {
+  margin-right: 40px;
+}
+
+.header-link {
+  color: var(--Body-Text, #191919);
+  /* Desktop/Body/Big */
+  font-family: PermianSerifTypeface;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+
+  cursor: pointer;
+}

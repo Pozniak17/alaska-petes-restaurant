@@ -1,0 +1,18 @@
+:root {
+  --BG-Beige: #fffce3;
+  --BG-Dark-Beige: #f9e8c7;
+  --BG-Footer-Green: #202c1c;
+
+  --Logo-Green: #464d33;
+  --Hover: #e3792f;
+  --Logo-Yellow-Stroke: #eeb74f;
+
+  --Body-Text: #191919;
+  --Body-Text-Gray: #646464;
+
+  --Element-Btn-Default: #3f5637;
+  --Element-Btn-Hover: #25411b;
+  --Element-Btn-Pressed: #222f1e;
+  --Element-Disabled: #474747;
+  --Element-Text: #f1f4e5;
+}
