@@ -1,6 +1,5 @@
 @import 'normalize.css';
-
-@import 'variables.module.css';
+@import url('./variables.css');
 
 @font-face {
   font-family: 'Room';
@@ -15,4 +14,25 @@ body {
   background-color: var(--BG-Beige);
   color: var(--Body-Text);
   font-family: 'Room', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
