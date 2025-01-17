@@ -6,15 +6,17 @@ import logo from '../../public/icons/logo.svg';
 import arrow from '../../public/icons/down-arrow.svg';
 import phone from '../../public/icons/call-ringing.svg';
 
-// export interface HomeProps {}
-
 export default function Home() {
   return (
     <header>
       <Container>
         <div className={styles['header-wrapper']}>
           <div className={styles['logo-wrapper']}>
-            <Image src={logo} alt="logo of Alaska Pete's restaurant" />
+            <Image
+              src={logo}
+              loading="eager"
+              alt="logo of Alaska Pete's restaurant"
+            />
             <h1 className={styles['logo-header']}>Alaska Pete’s</h1>
           </div>
 
@@ -48,13 +50,13 @@ export default function Home() {
 
           <div className={styles.connect}>
             <div className={styles.language}>
-              <Image src={arrow} alt="down arrow" />
+              <Image src={arrow} loading="eager" alt="down arrow" />
               <p className={styles.language_text}>UA</p>
             </div>
 
             <div className={styles.phone}>
               <a href="tel:5702238575" className={styles.phone_link}>
-                <Image src={phone} alt={'phone connect'} />
+                <Image src={phone} loading="eager" alt={'phone connect'} />
                 <span className={styles.number}>(570) 223-8575</span>
               </a>
             </div>
