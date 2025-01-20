@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import styles from './page.module.css';
 import Container from './shared/Container/Container';
 import logo from '../../public/icons/logo.svg';
+import menu from '../../public/icons/menu.svg';
 import arrow from '../../public/icons/down-arrow.svg';
 import phone from '../../public/icons/call-ringing.svg';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,11 +15,20 @@ export default function Home() {
         <div className={styles['header-wrapper']}>
           <div className={styles['logo-wrapper']}>
             <Image
-              src={logo}
+              src={menu}
               loading="eager"
-              alt="logo of Alaska Pete's restaurant"
+              alt="Menu"
+              className={styles.menu}
             />
-            <h1 className={styles['logo-header']}>Alaska Pete’s</h1>
+
+            <div className={styles.title_wrapper}>
+              <Image
+                src={logo}
+                loading="eager"
+                alt="logo of Alaska Pete's restaurant"
+              />
+              <h1 className={styles['logo-header']}>Alaska Pete’s</h1>
+            </div>
           </div>
 
           <nav className={styles['header-nav']}>
@@ -55,9 +66,9 @@ export default function Home() {
             </div>
 
             <div className={styles.phone}>
-              <a href="tel:5702238575" className={styles.phone_link}>
-                <Image src={phone} loading="eager" alt={'phone connect'} />
-                <span className={styles.number}>(570) 223-8575</span>
+              <a href="tel:5702238575">
+                <Image src={phone} loading="eager" alt="phone connect" />
+                {/* <span className={styles.number}>(570) 223-8575</span> */}
               </a>
             </div>
           </div>
