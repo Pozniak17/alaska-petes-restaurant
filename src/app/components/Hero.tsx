@@ -2,7 +2,6 @@ import Image from 'next/image';
 import styles from '../page.module.css';
 import img from '../../../public/image/hero-picture.jpg';
 import heroIcon from '../../../public/icons/hero.svg';
-import Container from '../shared/Container/Container';
 export default function Hero() {
   return (
     <section className={styles.hero}>
