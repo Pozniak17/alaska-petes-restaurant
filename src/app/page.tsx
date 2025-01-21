@@ -7,6 +7,7 @@ import menu from '../../public/icons/menu.svg';
 import arrow from '../../public/icons/down-arrow.svg';
 import phone from '../../public/icons/call-ringing.svg';
 import Link from 'next/link';
+import Hero from './components/Hero';
 
 export default function Home() {
   return (
@@ -73,6 +74,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <Hero />
       </Container>
     </header>
   );
