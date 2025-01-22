@@ -1,13 +1,14 @@
+import Link from 'next/link';
 import Image from 'next/image';
-// import Link from 'next/link';
+
 import styles from './page.module.css';
 import Container from './shared/Container/Container';
 import logo from '../../public/icons/logo.svg';
 import menu from '../../public/icons/menu.svg';
 import arrow from '../../public/icons/down-arrow.svg';
 import phone from '../../public/icons/call-ringing.svg';
-import Link from 'next/link';
-import Hero from './components/Hero';
+import Hero from './components/Hero/Hero';
+import Events from './components/Events/Events';
 
 export default function Home() {
   return (
@@ -76,6 +77,7 @@ export default function Home() {
         </div>
 
         <Hero />
+        <Events />
       </Container>
     </header>
   );
