@@ -10,6 +10,12 @@
   font-style: normal;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--BG-Beige);
   color: var(--Body-Text);
