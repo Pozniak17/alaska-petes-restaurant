@@ -3,30 +3,6 @@
   padding-bottom: 32px;
   background: var(--BG-Footer-Green, #202c1c);
   color: var(--BG-Beige, #fffce3);
-}
-
-.footer_wrapper {
-  display: flex;
-}
-
-.footer_text {
-  font-family: PermianSerifTypeface;
-  font-size: 12px;
-  line-height: 32px; /* 266.667% */
-  letter-spacing: 0.36px;
-}
-
-.footer_address {
-  margin-left: 8px;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-
-  text-decoration: none;
-  color: var(--BG-Beige, #fffce3);
-  text-align: center;
 
   /* Mobile/Body/Small */
   font-family: PermianSerifTypeface;
@@ -37,40 +13,66 @@
   letter-spacing: 0.36px;
 }
 
-.icon {
-  padding: 5px 4px;
+.icon_list {
+  gap: 8px;
+  display: flex;
+  list-style: none;
 }
 
-.link_text {
+.address_wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.address_list,
+.hours_list {
+  list-style: none;
   margin-left: 8px;
 }
 
 .contact_wrapper {
+  margin-bottom: 24px;
+}
+
+.hours_container {
+  display: flex;
+}
+
+.contact_list {
+  list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-.hours_wrapper {
+.second_wrapper {
   display: flex;
-
+  justify-content: space-between;
   margin-bottom: 32px;
 }
 
-.icon_list {
-  gap: 8px;
-  list-style: none;
-  display: flex;
+.contact_text {
+  margin-left: 8px;
 }
 
-.footer_logo {
+.contact_icon {
+  box-sizing: content-box;
+  padding: 5px 4px;
+}
+
+.contact_item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  margin-bottom: 24px;
+}
 
+.copyright {
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 8px;
+  justify-content: center;
   color: var(--BG-Beige, #fffce3);
 
   /* Desktop/Heading/H3 */
@@ -82,6 +84,57 @@
   letter-spacing: 0.72px;
 }
 
-.coopyrigth {
-  text-align: center;
+@media (min-width: 744px) {
+  .footer {
+    font-size: 16px;
+    letter-spacing: 0.48px;
+  }
+  .address_wrapper,
+  .contact_wrapper {
+    margin-bottom: 0;
+  }
+  .contact_list {
+    display: block;
+  }
+
+  .first_wrapper {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon_list {
+    gap: 16px;
+  }
+
+  .second_wrapper {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .first_wrapper {
+    display: block;
+  }
+
+  .address_wrapper {
+    margin-bottom: 8px;
+  }
+
+  .main_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .second_wrapper {
+    margin-bottom: 0;
+  }
+
+  .icon_list {
+    margin-left: 88px;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+  }
 }
