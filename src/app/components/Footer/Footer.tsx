@@ -21,7 +21,7 @@ export default function Footer() {
               <Image src={map} alt="map icon" />
               <ul className={styles.address_list}>
                 <li>
-                  <p>Alaska Pete's, USA 151 Seven Bridge Road</p>
+                  <p>Alaska Pete&apos;s, USA 151 Seven Bridge Road</p>
                 </li>
                 <li>
                   <p>Marshalls Creek, PA 18335</p>
