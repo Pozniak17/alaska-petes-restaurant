@@ -11,6 +11,12 @@
   }
 }
 
+@media (min-width: 744px) {
+  .logo-header {
+    margin-left: 8px;
+  }
+}
+
 .menu {
   margin-right: 16px;
 }
