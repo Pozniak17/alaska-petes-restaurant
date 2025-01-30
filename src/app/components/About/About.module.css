@@ -15,10 +15,10 @@
   letter-spacing: 1.08px;
 }
 
-.image_wrapper {
+/* .image_wrapper {
   height: 386px;
   border-radius: 20px;
-}
+} */
 
 .image {
   height: 100%;
@@ -115,47 +115,22 @@
     padding-top: 36px;
     padding-bottom: 36px;
   }
+
   .title {
     font-size: 40px;
     letter-spacing: 1.2px;
     margin-bottom: 48px;
   }
-  .image_wrapper {
+
+  .image {
     width: 338px;
     height: 440px;
-  }
-
-  .block_wrapper {
-    display: flex;
-    margin-top: 24px;
-  }
-  .block_title {
-    color: var(--Element-Btn-Default, #3f5637);
-    font-size: 40px;
-    letter-spacing: 1.2px;
-  }
-  .block_text {
-    font-size: 16px;
-    letter-spacing: 0.48px;
-  }
-  .block {
-    width: 336px;
-    height: 200px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 24px;
-  }
-  .block:first-child {
-    margin-right: 24px;
-  }
-
-  .test777 {
-    display: flex;
   }
 
   .first_wrapper {
     display: flex;
   }
+
   .about_text {
     margin-top: 16px;
     margin-bottom: 16px;
@@ -164,9 +139,30 @@
   }
 
   .about_wrapper {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 20px;
+    margin: 0;
+  }
+
+  .block_wrapper {
+    display: flex;
+    margin-top: 24px;
+  }
+
+  .block {
+    width: 336px;
+    height: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .block:first-child {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 744px) and (max-width: 1439px) {
+  .first_wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -182,7 +178,7 @@
     letter-spacing: 1.44px;
   }
 
-  .image_wrapper {
+  .image {
     width: 486px;
     height: 660px;
   }
@@ -196,12 +192,20 @@
   .about_text {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .about_wrapper {
     width: 586px;
     height: 192px;
+    margin-top: 0;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-left: 0;
   }
 
   .block {
-    width: 282px;
+    width: 100%;
+    /* width: 282px; */
     height: 220px;
     gap: 24px;
   }
@@ -217,12 +221,6 @@
     font-weight: 700;
     line-height: 56px; /* 116.667% */
     letter-spacing: 1.44px;
-  }
-
-  .about_wrapper {
-    margin-top: 0;
-    padding: 0;
-    margin-left: 0;
   }
 
   .image_wrapper {
@@ -244,5 +242,9 @@
     justify-content: space-between;
     /* padding-left: 64px;
     padding-right: 64px; */
+  }
+
+  .about_button {
+    display: none;
   }
 }
