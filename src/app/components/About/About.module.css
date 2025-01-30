@@ -154,7 +154,7 @@
   }
 
   .first_wrapper {
-    /* display: flex; */
+    display: flex;
   }
   .about_text {
     margin-top: 16px;
@@ -239,9 +239,9 @@
   .second_wrapper {
     padding-left: 64px;
     padding-right: 64px;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between;
     /* padding-left: 64px;
     padding-right: 64px; */
   }
